@@ -1,0 +1,30 @@
+@media screen and (max-width: 1650px) {
+    .header {
+        padding: 45px 100px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .links {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .links .close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .links .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
