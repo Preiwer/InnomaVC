@@ -30,6 +30,10 @@
   border-radius: 10px;
 }
 
+.btn:hover {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .btn-green {
   background-color: #07af91;
 }
@@ -49,7 +53,23 @@
   list-style-type: none;
 }
 
-.header .links li {
+.header .links .close button {
+  display: none;
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.header .links .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .links .content li {
   margin-right: 52px;
 }
 
@@ -63,4 +83,6 @@
 
   background: #ffffff;
   border-radius: 5px;
+  border: none;
+  z-index: 20;
 }
