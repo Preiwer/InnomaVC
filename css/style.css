@@ -2,7 +2,36 @@
 
 .main {
   height: 100vh;
-  width: 1920px;
+  width: 100%;
+  /* width: 1920px; */
+}
+
+.link {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 80px;
+  color: #ffffff;
+}
+
+.btn {
+  width: 149px;
+  height: 55.66px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  border: none;
+
+  border-radius: 10px;
+}
+
+.btn-green {
+  background-color: #07af91;
 }
 
 .header {
@@ -10,7 +39,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 45px 352px;
-  background-color: #f1f1f1;
+  background-color: grey;
 }
 
 .header .links {
@@ -24,12 +53,14 @@
   margin-right: 52px;
 }
 
-.header .links li a {
-  text-decoration: none;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 80px;
-  color: #ffffff;
+.header .btn-gr {
+}
+
+.header .btn-gr .burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+
+  background: #ffffff;
+  border-radius: 5px;
 }
