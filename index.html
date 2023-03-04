@@ -55,7 +55,7 @@
         </ul>
 
         <div class="btn-gr">
-          <button class="btn btn-green">Войти</button>
+          <button class="btn btn-green" id="signIN">Войти</button>
           <button class="burger">
             <img src="./img/align-center.svg" alt="" />
           </button>
@@ -64,11 +64,31 @@
 
       <div class="dashboard">
         <div class="top">
-          <h1>Запустите <span>технологический IT-бизнес</span> на международных рынках</h1>
+          <h1>
+            Запустите <span>технологический IT-бизнес</span> на международных
+            рынках
+          </h1>
         </div>
-        <div class="middle"></div>
-        <div class="bottom"></div>
+        <div class="middle">
+          <p>Открыт набор заявок на акселератор</p>
+        </div>
+        <div class="bottom">
+          <button class="btn btn-blue">Подать заявку</button>
+        </div>
       </div>
+
+      <dialog class="dialog" id="dialog">
+        <form method="dialog">
+          <button id="dial_close"><img src="./img/Group 929.svg" alt="" srcset=""></button>
+        </form>
+        <div class="content">
+          <p>Вход</p>
+          <input type="email" placeholder="Е-маил">
+          <input type="password" placeholder="Пароль">
+          <button class="btn btn-green">Войти</button>
+          <a href="#">Зарегистрироваться</a>
+        </div>
+      </dialog>
 
       <div class="bg">
         <div class="gradient"></div>
@@ -76,6 +96,8 @@
       </div>
 
       <main></main>
+
+      <script src="./js/modal.js"></script>
     </div>
   </body>
 </html>

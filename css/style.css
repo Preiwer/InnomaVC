@@ -38,6 +38,14 @@
   background-color: #07af91;
 }
 
+.btn-blue {
+  width: 219px;
+  height: 80px;
+
+  background: linear-gradient(276.41deg, #016ca8 -7%, #61b5e4 77.16%);
+  border-radius: 10px;
+}
+
 /* HEADER */
 .header {
   display: flex;
@@ -88,6 +96,7 @@
   z-index: 20;
 }
 
+/* Wallpaper */
 .bg {
   position: absolute;
   top: 67px;
@@ -113,4 +122,164 @@
   width: 100vw;
   height: 100vh;
   z-index: -1;
+}
+
+/* Dashboard */
+.dashboard {
+  padding: 0 352px;
+  margin-top: 140px;
+}
+
+.dashboard .top {
+}
+
+.dashboard .top h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.dashboard .top span {
+  display: block;
+  background-color: #07af91;
+  border-radius: 3px;
+  width: 773px;
+  height: fit-content;
+  text-align: center;
+}
+
+.dashboard .middle {
+}
+
+.dashboard .middle p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 80px;
+
+  /* or 235% */
+
+  color: #ffffff;
+}
+
+/* Dialog */
+
+.dialog {
+  display: none;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: transparent;
+  border: none;
+
+  width: 320px;
+}
+
+.dial_active {
+  display: flex;
+}
+
+.dialog::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.59);
+  z-index: -1;
+}
+
+.dialog form button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dialog .content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  background: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  height: 90%;
+  padding: 30px 30px;
+}
+
+.dialog .content p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+
+  color: #000000;
+  margin: none;
+}
+
+.dialog .content input {
+  width: 100%;
+  height: fit-content;
+
+  background: #f1f1f1;
+  border-radius: 5px;
+  border: 0px;
+  box-sizing: border-box;
+
+  padding: 15px 21px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 10px;
+  outline: none;
+}
+.dialog .content input:last-child {
+  margin-top: 0px;
+}
+.dialog .content input:focus-visible {
+  border-bottom: 2px solid #000000;
+}
+
+.dialog .content .btn {
+  width: 100%;
+  margin-top: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+.dialog .content a {
+  margin-top: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration-line: underline;
+  color: #07af91;
+  transition: .5s;
+}
+dialog .content a:hover{
+  letter-spacing: .5px;
 }

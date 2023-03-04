@@ -1,4 +1,4 @@
-.maketforfigma{
+.maketforfigma{ 
     flex: 0 0 auto;
     background: #313a46;
     font-weight: bold;
@@ -21,7 +21,7 @@
     font-weight: bold;
 }
 .maketforfigma p > a:hover {
-    color: #ffffff
+    color: #ffffff;
 }
 .main{
     flex: 1 0 auto;
